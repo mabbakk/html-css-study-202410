@@ -1,0 +1,86 @@
+@import url(../common.css);
+
+#wrapper {
+    background: #666;
+    height: 800px;
+}
+header {
+    background: navy;
+    width: 75%;
+    margin: auto;
+    height: 135px;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+header h1 {
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    padding-top: 5px;
+    color: yellow;
+    font-size: 25px;
+    font-weight: 800;
+}
+header h1 strong {
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+}
+header h1 span {
+    font-size: 35px;
+}
+header h1 em {
+    font-size: 50px;
+    color: gray;
+}
+.container-clearfix {
+    width: 75%;
+    height: 450px;
+    background: lightgray;
+    margin: auto;
+    display: flex;
+}
+.container-clearfix .menu li {
+    padding-left: 20px;
+    padding-top: 30px;
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    display: flex;
+    color: #000;
+    text-decoration: underline;
+}
+.content h2 {
+    height: 50px;
+    background: brown;
+    font-weight: 500;
+    font-family: "궁서체", cursive;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: yellow;
+}
+.t1 {
+    background: #fff;
+    line-height: 1.3;
+    text-align: justify;
+    font-size: 15px;
+    padding: 20px;
+}
+.t2 {
+    background: #fff;
+    padding: 20px;
+    
+    
+}
+footer address {
+    width: 75%;
+    background: #aaa;
+    margin: auto;
+    height: 50px;
+}
+footer address p {
+    text-align: start;
+    padding: 15px
+}

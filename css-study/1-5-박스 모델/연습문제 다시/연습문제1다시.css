@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    border: 3px double #123456;
+    width: 650px;
+    margin: 70px auto;
+}
+section .main-title{
+    background: #abcdef;
+    /* h1은 기본적으로 margin이 들어가있으므로, 꼭 o으로 먼저 설정해줘야 한다. */
+    margin: 0;
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 18px;
+    border-bottom: 3px solid #123456;
+}
+.c1{
+    border-bottom: 1px dotted #123456;
+}
+section .content{
+    padding: 15px 12px;
+}
+section .content .sub-title{
+    margin: 0;
+}
+section .content p{
+    margin: 0;
+    margin-top: 10px;
+}

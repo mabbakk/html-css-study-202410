@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            background:
+            url(../img/contact.jpg)
+            center/cover;
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container p {
+            width: 60%;
+            font-size: 3rem;
+            color: #fff;
+            line-height: 1.3;
+            text-shadow: 3px 3px 8px #111;
+            text-align: justify;
+            opacity: 0;
+
+            animation-name: show;
+            animation-duration: 5s;
+            /* 애니메이션 종료 후 100%에서 정지 */
+            animation-fill-mode: both;
+        }
+
+        @keyframes show {
+            0% {
+                opacity: 0;
+                transform: translate(0, -500px);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>대통령은 법률안의 일부에 대하여 또는 법률안을 수정하여 재의를 요구할 수 없다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.</p>
+    </div>
+</body>
+</html>

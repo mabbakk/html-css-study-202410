@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            margin-bottom: 50px;
+        }
+        .box input{
+            /* inline-block = inline처럼 가로 배치도 되고, 가로 세로 길이 조정 가능! */
+            display: inline-block;
+            height: 40px;
+        }
+        .box input:nth-child(3) {
+            background: greenyellow;
+            /* didplay:none = 화면에서 사라지고 자리도 뺏김. */
+            /* display: none; */
+
+            /* opacity는 사라지는 게 아니라 안 보이게 하는 것. 입력은 O*/
+            opacity: 0.3;
+
+            /* visibility는 사라지는데 자리는 유지된다. 입력도 X*/
+            visibility: hidden;
+        }
+        
+        .click{
+            margin-left: 20px;
+            border: 2px solid #000;
+            /* fit-content = 내용에 핏하게. */
+            width: fit-content;
+            padding: 7px 14px;
+            border-radius: 10px;
+        }
+        .click a{
+            display: block;
+            width: 100px;
+            font-weight: 700;
+            text-decoration: none;
+            color: gray;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <input type="text" value="1">
+        <input type="text" value="2">
+        <input type="text" value="3">
+        <input type="text" value="4">
+        <input type="text" value="5">
+    </div>
+
+    <!-- a태그는 여러 개 놨을 때 가로 배치이므로 인라인! -->
+    <div class="click">
+        <a href="#">click me!</a>
+    </div>
+</body>
+</html>

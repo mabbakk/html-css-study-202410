@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 4px dashed orange;
+            margin: 250px auto;
+
+            background-image: url("../img/visual1.jpg");
+            /* 이미지 사이즈 조절 */
+            /* 가로 세로 */
+            background-size: cover;
+            /* contain은 이미지를 최대한 보여줌. 그러나 여백이 생길 수 있음. */
+            /* cover의 경우는 이미지가 잘릴 수 있으나, 여백없이 다 보여줌. */
+
+            /* 배경 반복 설정 */
+            background-repeat: no-repeat;
+
+
+            background-color: orange;
+            background-position: center;
+
+            /* 단축 속성 bg_위에 따로 적었던 속성을 한 번에 적을 수 있음.*/
+            /* 순서 상관없음 */
+            /* 실무에서는 center/cover를 가장 많이 씀! */
+
+            /* background: red url('../img/logo.png') center / cover; */
+
+            /* 사진은 가만히 있고 스크롤을 내리면 사진 위에 컨텐츠가 움직인다. */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

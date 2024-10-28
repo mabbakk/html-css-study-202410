@@ -1,0 +1,10 @@
+h1{
+    font-size: 30;
+    font-style: italic;
+    background: violet;
+}
+
+li{
+    font-size: 25px;
+    text-decoration: underline;
+}

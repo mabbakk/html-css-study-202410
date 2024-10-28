@@ -1,0 +1,164 @@
+@import url(../common.css);
+
+html {
+    font-size: 14px;
+}
+body {
+    background: #aaa;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    font-family: "굴림", serif;
+}
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* header style */
+
+#wrapper header {
+    background: orange;
+}
+#wrapper header h1 {
+    /* border: 1px solid #000; */
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+#wrapper header h1 span {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+#wrapper header h2.stit {
+    text-align: center;
+    background: lightgray;
+    font-size: 11px;
+    font-family: "굴림체", cursive;
+}
+
+/* //header style */
+
+
+
+/* container style 1*/
+
+#wrapper .container-clearfix {
+    background: #ccc;
+    display: flex;
+}
+#wrapper .container-clearfix .side-menu {
+    background: #fff;
+    width: 25%;
+}
+#wrapper .container-clearfix .side-menu h3 {
+    background: #800;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+#wrapper .container-clearfix .side-menu ul li {
+    text-decoration: underline;
+    line-height: 1.9;
+    font-weight: 900;
+    margin: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+/* //container style 1*/
+
+
+/* container style 2*/
+
+#wrapper .container-clearfix .main-content {
+    width: 50%;
+    /* border: 1px solid #000; */
+    padding: 20px 10px 10px;
+}
+#wrapper .container-clearfix .main-content .art-piece .title {
+    background: #123456;
+    color: #fff;
+    font-weight: 300;
+    padding: 5px;
+    font-family: sans-serif;
+}
+#wrapper .container-clearfix .main-content .art-piece .artist {
+    font-size: 20px;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #123456;
+}
+#wrapper .container-clearfix .main-content .art-piece p.detail {
+    padding: 5px 0 30px;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 5px auto;
+    color: #123456;
+} 
+
+
+/* //container style 2*/
+
+
+/* container style 3*/
+#wrapper .container-clearfix aside.banner {
+    width: 25%;
+    background: #fff;
+    padding: 15px;
+}
+#wrapper .container-clearfix .banner h3 {
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+#wrapper .container-clearfix .banner .all {
+    text-decoration: underline;
+    color: gray;
+    display: flex;
+    margin-bottom: 10px;
+}
+#wrapper .container-clearfix .banner .love {
+    text-decoration: underline;
+    color: orange;
+    display: flex;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+#wrapper .container-clearfix .banner .link li a {
+    text-decoration: underline;
+    font-weight: 700;
+    display: block;
+}
+
+
+/* //container style 3*/
+
+
+
+
+/* footer style */
+
+
+#wrapper footer {
+    background: #123456;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* footer style */

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="이름을 입력하세요."disabled>
+        <br>
+        <input type="password">
+        <br>
+        <input type="email" value="abc">
+        <br>
+
+        취미 :
+        <label>
+            <input type="checkbox" name="hobby">운동
+        </label>
+
+        <label>
+            <input type="checkbox" name="hobby">명상
+        </label>
+
+        <label>
+            <input type="checkbox" name="hobby">숨쉬기
+        </label>
+
+        <br>
+        
+
+
+        <!-- 각각의 선택지를 단독으로 만들기 위해 name 을 추가한다.
+         단 모든 선택지에 name 명은 동일하게. -->
+
+
+        약관 동의:
+        <label>
+            <input type="radio" name="agree">예
+        </label>
+
+        <label>
+            <input type="radio" name="agree">아니오
+        </label>
+
+        <br>
+        
+
+<!-- min은 최대 내려갈 수 있는 지점을 지정. -->
+
+        <input type="number" value="0" max="5" min="0">
+
+
+
+        <input type="range" value="3" max="5" min="1">
+
+        <br>
+
+    
+
+
+<!-- 파일을 여러 개 선택하고 싶다면 multiple 입력. -->
+        <input type="file" multiple accept="image/*">
+        <br>
+
+        <!-- rows는 세로로 5줄 이상, cols는 가로 입력 텍스트 수 영어기준  10자 -->
+        <textarea rows="5" cols="10"></textarea>
+        <br>
+
+<!-- disabled는 더 이상 옵션을 선택할 수 없을 때. selected는 해당 텍스트로 선택되고 시작. -->
+        <select>
+            <option>아메리카노</option>
+            <option disabled>카푸치노</option>
+            <option selected>카페라테</option>
+        </select>
+
+
+
+        <button type="button">버튼</button>
+        <!-- type을 생략하면 submit이 기본으로 처리됨. -->
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+
+
+        <!-- input type 버튼은 명시성이 없음. 헷갈릴 수 있으니 웬만하면 사용 비추. -->
+        <input type="button" value="버튼2">
+
+
+    </form>    
+
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 50px;
+
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 0.5s;
+            transition-timing-function: steps(10); */
+
+            /* 실무에서는 위에처럼 세부적으로 적지 않고 아래 transition 1s 하나만 적고 조절한다.
+            이 또한 순서 상관 X. */
+            transition: 1s 0.5s steps(4);
+        }
+        .box:hover {
+            width: 300px;
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

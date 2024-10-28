@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    border: 3px double #123456;
+    width: 650px;
+    margin: 70px auto;
+}
+section .main-title{
+    letter-spacing: 10px;
+    background: #abcdef;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #123456;
+}
+section .content{
+    padding: 15px 12px;
+    
+}
+section .content .sub-title{
+    margin: 0;
+}
+section .content p{
+    margin: 0;
+    margin-top: 10px;
+}
+.c1{
+    border-bottom: 1px dotted #000;
+}

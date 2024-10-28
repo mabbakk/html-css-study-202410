@@ -1,0 +1,24 @@
+/*
+        기존에 디폴트로 가지고 있는 margin, padding 등을 
+        초기화 하여 처음부터 디자인을 하는 작업을 reset이라고 한다.
+        */
+        
+body{
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}

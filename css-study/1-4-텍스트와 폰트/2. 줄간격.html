@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            /* 텍스트 정렬 */
+            text-align: center;
+            /* 선 긋기 */
+            text-decoration: underline;
+            /* 자간 */
+            /* html에서 글자에 직접 띄어쓰기를 주는 것이 아니라 css에서 자간 차이를 준다. */
+            letter-spacing: 7px;
+
+        }
+        p{
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1.5;
+            /* 줄간격 lh(line height)는 px이 아니라 배수를 사용한다.
+               간격은 1.2~1.6 추천 */
+
+            /* 여러 줄일 때 양쪽 정렬. */
+            text-align: justify;
+            /* 첫 줄 들여쓰기 */
+            text-indent: 10px;
+            /* 띄어쓰기 간격 */
+            word-spacing: 5px;
+            /* 글자 굵기 */
+            font-weight: bold;
+
+            strong{ 
+                /* 글자 굵기는 100~900 사이의 100단위 숫자를 사용, 900이 가장 굵음 */
+                font-weight: 200;
+                font-style: italic;
+            }
+            span{
+                font-weight: 900;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>안녕하세요</h1>
+    <p>
+        국가는 건전한 소비행위를 계도하고 <strong>생산품의 품질향상을 촉구</strong>하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다. 행정각부의 설치·조직과 직무범위는 법률로 정한다.
+        정당은 그 목적·조직과 활동이 <span>민주적</span>이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.
+    </p>
+</body>
+</html>

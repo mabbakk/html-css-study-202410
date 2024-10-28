@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        자식, 후손, 형제 선택자
+
+        
+      가장 마지막 선택자가 스타일 타겟,
+        그 앞은 전부 조건*/
+    div > .oran {
+      background: orange;}
+
+      /* 망고와 당근에 동시에 같은 배경이 들어감.
+           그러나 망고의 배경을 빼고 싶다면 아래 당근의 id인 #change를
+           아래 div 뒤에 붙이면 됨. */
+
+      div > div#change {
+        background: orangered;
+      }
+
+      body > div > ul > #apple {
+        color: red;
+      }
+
+      #circle > h1.title > .left.low > .mango {
+        font-size: 32px;
+        color: yellowgreen;
+      }
+
+      body > header > .rotate > span.kiwi {
+        background: yellowgreen;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    
+    <!-- kiwi의 부모는 .rotate인데 .은 태그를 의미, 그러나 태그가 없으므로
+     아무 태그를 붙여도 상관없다. rotate는 class임.
+     그래서 나는 일단 태그 div를 감싸고 div 뒤에 class를 입력 후 rotate 입력.
+     
+     두 번째로, .rotate는 header(태그)에 속해있으므로 그대로 header로 감쌈.-->
+
+    <header>
+      <div class="rotate"><span class="kiwi">키위</span></div>
+    </header>
+
+    <section id="circle">
+      <h1 class="title">
+        <div class="left low">
+          <div class="mango">망고</div>
+        </div>
+      </h1>
+    </section>
+
+    <!-- div>ul>li*3 -->
+    <div>
+      <ul>
+        <li
+          id="apple"
+          class="red">
+          사과
+        </li>
+        <li>포도</li>
+        <li class="oran">오렌지</li>
+        <li class="red">체리</li>
+      </ul>
+
+      <!-- div+p+span -->
+      <div
+        id="change"
+        class="yellow low primary">당근
+      </div>
+      <p class="red">토마토</p>
+      <span class="oran">오렌지</span>
+    </div>
+  </body>
+</html>
